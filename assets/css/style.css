@@ -1,0 +1,237 @@
+/*
+ * Author: WEB Resume
+ * URL: http://webresume.net
+ *
+ * Project Name: WEB Resume - Material
+ * Version: 1.0
+ * Date: 01-11-2014
+ * URL: http://webresume.net/material
+ */
+
+
+/* ==========================================================================
+   Base Styles and Bootstrap Modifications
+   ========================================================================== */
+
+body {
+	overflow: hidden;
+}
+
+/* Preloader */
+
+#preloader {
+    position:fixed;
+    top:0;
+    left:0;
+    right:0;
+    bottom:0;
+    background-color:#fff; /* change if the mask should have another color then white */
+    z-index:99; /* makes sure it stays on top */
+}
+
+#status {
+    width:200px;
+    height:200px;
+    position:absolute;
+    left:50%; /* centers the loading animation horizontally one the screen */
+    top:50%; /* centers the loading animation vertically one the screen */
+    background-image:url(../images/status.gif); /* path to your loading animation */
+    background-repeat:no-repeat;
+    background-position:center;
+    margin:-100px 0 0 -100px; /* is width and height divided by two */
+}
+
+html,
+body {
+    height: 100%;
+	font-family: 'Roboto', sans-serif;
+	background: #FDFDFD;
+    font-weight: 400;
+    font-size: 16px;
+    -webkit-font-smoothing: antialiased;
+    -webkit-overflow-scrolling: touch;
+	}
+
+
+h4,h5  { font-family: 'Roboto', sans-serif; color:#466064;  }
+
+strong {color:#2C3C3F;}
+
+small  {color:#2C3C3F;}
+
+h1 {
+	font-family: 'Roboto', sans-serif; 
+	font-weight:500;
+	font-size: 50px; 
+	color: #4E5D6C; 
+	}
+
+h2 {
+	font-family: 'Roboto', sans-serif; 
+	color:#4E5D6C; 
+	font-size:35px;}
+
+h3 {
+	font-family: 'Roboto', sans-serif; 
+	color:#4E5D6C; }
+
+a { color: #4E5D6C;}
+
+a:hover {color:#D8DDE2; }
+
+p {color: #2C3C3F;}
+
+hr {color:#17BE7E;}
+
+
+
+	
+/*===========================
+  --- Section 1 ----
+=========================== */
+
+#section-1 {
+	height:650px;
+	background: #99B2B7;
+}
+
+#section-1 h1 {color:#FDFDFD;}
+
+.userimg {
+	margin-top:140px;
+    height:130px;
+	width:130px;
+    border-radius: 15px;
+} 
+
+.mainmenu {
+	margin-top:60px;
+}
+
+.btn-default {margin-left:5px;}
+
+
+/*===========================
+  --- Section 2 ----
+=========================== */
+
+
+#section-2 {
+height: 550px;
+padding-bottom:25px;
+padding-top:50px;
+}
+
+.userimg2 {
+	margin-top:25px;
+    border-radius: 15px;
+	height:400px;
+	width:400px; 
+} 
+
+.mainsection {border-right: solid #265959;}
+
+.mainsection2 h4 {margin-top:30px; margin-left:30px; font-size: 20px;}
+
+.button {background-color: #4E5D6C ;}
+
+/*===========================
+  --- Section 3 ----
+=========================== */
+
+
+#section-3 h1 { padding-bottom:30px;}
+
+#section-3 {padding-bottom:50px; padding-top:50px;}
+
+#myStat, #myStat2, #myStat3, #myStat4{ color:#547476;}
+
+
+
+
+/*===========================
+  --- Section 4 ----
+=========================== */
+
+
+#section-4 { 
+	padding-bottom:50px; 
+	padding-top:50px;
+}
+
+.fa  {color:#99B2B7;}
+
+#section-4 h1 { padding-bottom:50px;}
+
+.qfn {
+	border-radius:30px; 
+	background-color: #E8EDEE; 
+	padding: 10px; 
+}
+
+#section-4 h3 {
+
+    font-size: 22px; font-weight: 600;
+}
+	
+/*===========================
+  --- Section 5 ----
+=========================== */
+
+
+#section-5 h1 { padding-bottom:50px;}
+
+#section-5 {padding-bottom:50px; padding-top:50px;}
+ 
+.work1 {
+	
+	padding-bottom: 20px; 
+	 
+	border-right: solid 2px #265959;
+}
+
+.work2 {
+	
+	padding-bottom: 20px; 
+	
+}
+
+
+		
+/*===========================
+  --- Section 6 ----
+=========================== */
+
+
+#section-6 { padding-bottom:100px; padding-top:50px;}
+#section-6 h1 { padding-bottom:30px;}
+#section-6 h2 { font-size: 25px;  }
+
+/*===========================
+  --- Section 7 ----
+=========================== */
+
+
+#section-7 { 
+	background-color:#99B2B7; 
+	padding-bottom:50px; 
+	padding-top:50px;
+}
+
+#section-7 h1 { color: #FDFDFD; padding-bottom:30px;}
+
+#section-7 .fa {color: #4E5D6C;}
+
+#section-7 .fa:hover {color: #D8DDE2;}
+
+
+/*==============================
+  --- Mobile Optimization ----
+============================= */
+
+
+@media screen and (max-width: 980px) {
+
+.qfn  {margin-bottom:30px;}
+
+}
