@@ -1,39 +1,12 @@
+(function($) {
 
-$('a[href*=#]:not([href=#])').click(function() {
-    if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') 
-        || location.hostname == this.hostname) {
+// prettyPhoto
+	jQuery(document).ready(function(){
+		jQuery('a[data-gal]').each(function() {
+			jQuery(this).attr('rel', jQuery(this).data('gal'));
+		});  	
+		jQuery("a[data-rel^='prettyPhoto']").prettyPhoto({animationSpeed:'slow',theme:'light_square',slideshow:false,overlay_gallery: false,social_tools:false,deeplinking:false});
+	}); 
 
-        var target = $(this.hash);
-        target = target.length ? target : $('[name=' + this.hash.slice(1) +']');
-           if (target.length) {
-             $('html,body').animate({
-                 scrollTop: target.offset().top
-            }, 1000);
-            return false;
-        }
-    }
-});
-
-
-//My stat circles 
-
-$( document ).ready(function() {
-        $('#myStat').circliful();
-    });
-
-
-$( document ).ready(function() {
-        $('#myStat2').circliful();
-    });
-
-
-$( document ).ready(function() {
-        $('#myStat3').circliful();
-    });
-
-$( document ).ready(function() {
-        $('#myStat4').circliful();
-    });
-
-	
-
+		
+})(jQuery);
